@@ -32,6 +32,16 @@ a:hover{text-decoration:underline}
 .pills{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:28px}
 .pill{background:var(--accent-pale);color:var(--accent-deep);font-weight:600;font-size:.9rem;padding:7px 14px;border-radius:20px}
 
+/* Screenshot gallery */
+.shots{padding:4px 0 24px}
+.shot-row{display:flex;gap:22px;overflow-x:auto;padding:10px 24px 18px;
+  scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}
+.shot{flex:0 0 auto;scroll-snap-align:center;text-align:center;margin:0}
+.shot img{width:212px;height:auto;display:block;border-radius:30px;
+  border:1px solid var(--border);box-shadow:0 14px 34px rgba(35,26,20,.14);background:#fff}
+.shot figcaption{margin-top:12px;font-size:.85rem;color:var(--ink-muted);font-weight:600}
+@media (min-width:1140px){ .shot-row{justify-content:center} }
+
 /* Content + cards */
 .page{padding:48px 0 24px}
 .page h1{font-size:2rem;letter-spacing:-.02em;margin-bottom:6px}
