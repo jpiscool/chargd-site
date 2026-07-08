@@ -25,14 +25,14 @@
 
 <main class="wrap page">
   <h1>Privacy Policy</h1>
-  <div class="updated">chargd · Last updated June 25, 2026</div>
+  <div class="updated">chargd · Last updated July 8, 2026</div>
   <p class="lead">chargd is designed to be private by default. This policy explains what the app does and does not do with your information.</p>
 
   <h2>The short version</h2>
-  <p>chargd does not collect, transmit, sell, or share any personal data. The app works entirely offline. Everything you enter stays on your device.</p>
+  <p>chargd does not collect, transmit, sell, or share any personal data. chargd has no server of its own — everything you enter stays on your device. The app works offline; the only time it connects to the internet is an optional integration you choose to turn on (see <a href="#google">Optional Google Calendar</a>), and even then your data is not sent to us.</p>
 
   <h2>What we collect</h2>
-  <p><strong>Nothing.</strong> chargd has no user accounts, no analytics, no advertising, and no third-party tracking SDKs. The app does not make network requests and has no server that could receive your data.</p>
+  <p><strong>Nothing.</strong> chargd has no user accounts, no analytics, no advertising, and no third-party tracking SDKs. chargd operates no server that could receive your data. The app makes network requests only for the optional Google Calendar connection described below, and only if you enable it.</p>
 
   <h2>Data you create</h2>
   <p>To-dos, habits, routines, and journal entries (including a daily mood) are stored locally on your device using Apple's on-device storage (SwiftData). This data is included in your device's standard encrypted backups (iCloud or iTunes/Finder) only if you have those backups enabled — that backup is managed by Apple, not by chargd.</p>
@@ -45,6 +45,9 @@
     <li><strong>Notifications</strong> — used only to deliver reminders you opt into (tasks, habits, and routines) and a gentle daily journal prompt.</li>
   </ul>
   <p>You can revoke any of these permissions at any time in the iOS Settings app.</p>
+
+  <h2 id="google">Optional: Google Calendar</h2>
+  <p>chargd offers an optional Google Calendar connection, which is <strong>off unless you turn it on</strong> in Settings. If you connect it, chargd signs you in to Google directly (using Google's standard OAuth flow) and requests <strong>read-only</strong> access to your calendar events. Those events are fetched directly from Google to your device and displayed alongside your day — they are never sent to chargd, because chargd has no server. Your Google sign-in tokens are stored securely in the iOS Keychain on your device. chargd never creates, edits, or deletes Google Calendar events, and you can disconnect at any time in Settings, which removes the stored tokens. Google's handling of your data is governed by <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>.</p>
 
   <h2>Children's privacy</h2>
   <p>chargd does not collect data from anyone, including children.</p>
